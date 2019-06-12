@@ -1,0 +1,23 @@
+{
+  "name": "sockets-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "tic-tac-toe where you can play with a friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinCout/sockets-tic-tac-toe.git"
+  },
+  "author": "Justin Coutinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinCout/sockets-tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/JustinCout/sockets-tic-tac-toe#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
+  }
+}
