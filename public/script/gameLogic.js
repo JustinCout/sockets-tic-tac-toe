@@ -10,16 +10,6 @@ jQuery(document).ready(function() {
   let play = true;
 
   $('#main [id^="block"]').click(function() {
-    if ($(this).text() === "" && play) {
-      //Every other number or even number%2 = 0 - thus every other click will be O
-      if (move % 2 === 1) {
-        $("p", this).text("X");
-      } else {
-        $("p", this).text("O");
-      }
-
-      move++;
-
       if (winner() === 0 && move === 10) {
         mainTitle.style.display = "none";
         cats.style.display = "block";
@@ -32,12 +22,9 @@ jQuery(document).ready(function() {
         mainTitle.style.display = "none";
         owin.style.display = "block";
         play = false;
-      }
-    }
+      }   
   });
-
   //               --Winner checker--
-
   function winner() {
     let v1 = $("#value1").text();
     let v2 = $("#value2").text();
@@ -73,12 +60,11 @@ jQuery(document).ready(function() {
     }
     //No Winner
     return 0;
-  }
+  } //end of winner function
 
   //New Game Button
   let newGame = document.getElementById("refresh");
   newGame.onclick = refreshPage;
-
   function refreshPage() {
     window.location.reload();
   }
